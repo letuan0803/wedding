@@ -556,7 +556,8 @@ var Neela;
                 fullscreenControlOptions: {
                     position: fullscreenCtrlPos
                 },
-                mapId: $_self.mapID
+                mapId: $_self.mapID,
+                gestureHandling: "cooperative",
             };
 
             $(".gmap").each(function () {
@@ -582,6 +583,7 @@ var Neela;
                         anchor: 8,
                         anchorPoint: new google.maps.Point(0, -50),
                         shadow: "none",
+                        // animation: google.maps.Animation.DROP,
                         content: "<div class=\"marker\"><i class=\"fa " + icon + "\"></i></div>"
                     });
 
