@@ -38,6 +38,7 @@ var Neela;
         rtlFlag: rtl,
         slidehowImages: slidehow_images,
         timelineParallax: timeline_parallax,
+        mapID: map_id,
 
         init: function () {
 
@@ -554,7 +555,8 @@ var Neela;
                 },
                 fullscreenControlOptions: {
                     position: fullscreenCtrlPos
-                }
+                },
+                mapId: $_self.mapID
             };
 
             $(".gmap").each(function () {
